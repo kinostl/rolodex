@@ -11,7 +11,7 @@ import ViewPage from './Page/view';
 
 const App = () => (
 	<main>
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Navigation />
 			<Switch>
 				<Route exact path="/">
